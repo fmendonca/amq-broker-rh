@@ -7,11 +7,11 @@ clustered: false
 platform: openshift
 
 application:
-  name: amq-broker-artemis
+  name: amq-int-dev
   amq_broker_version: 7.11
   amq_broker_image: registry.redhat.io/amq7/amq-broker-rhel8
   pullPolicy: IfNotPresent
-  persistent: true
+  persistent: false
   volume_capacity: "1G"
   replicas: 1
   storageclass: managed-csi
