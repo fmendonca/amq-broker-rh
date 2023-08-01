@@ -86,7 +86,7 @@ parameters:
   tls_enabled: false
   jolokia_passthrough: false
   append_ns: false
-  openshift_appdomain: apps.z3m4sju7.eastus.aroapp.io
+  openshift_appdomain: apps.pgjwbjq2.eastus2.aroapp.io
   amq_protocols: "openwire,amq,stomp,mqtt,hornetq,core"
   amq_broker_name: "broker"
   amq_global_max_size: "200 mb"
@@ -121,8 +121,8 @@ templates:
   pvc_name: "{{ .Values.application.name }}-persistent-volume"
 
 admin:
-  user: admin
-  password: password
+  user: amqadmin
+  password: Vale@7654321
   cluster_user: cadmin
   cluster_password: cpassword
   role: "admin"
